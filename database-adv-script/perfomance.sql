@@ -27,4 +27,6 @@ JOIN Property p ON b.property_id = p.property_id
 
 LEFT JOIN Payment pay ON b.booking_id = pay.booking_id
 
+WHERE b.status = 'confirmed' AND b.total_price > 0
+
 ORDER BY b.start_date DESC;
