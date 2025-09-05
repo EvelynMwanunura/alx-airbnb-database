@@ -1,6 +1,6 @@
 SELECT *
 FROM booking
-JOIN user ON user.user_id = booking.user_id;
+INNER JOIN user ON user.user_id = booking.user_id;
 
 
 SELECT *
